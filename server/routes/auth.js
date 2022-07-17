@@ -34,4 +34,5 @@ const validate = (data)=>{
         password:Joi.string().email().required().label("Password")
     });
     return schema.validate(data);
-}
+};
+module.exports = router;
